@@ -1,0 +1,104 @@
+var MainMenu = function(node) {
+
+	// simply create all 'menuComponents' define below
+	for (var i=0, il=sofia.menuComponents.length; i<il; i++) {
+		var component = new window[sofia.menuComponents[i]](node);
+	}
+
+	var ext = {
+
+	};
+
+	ext = $.extend(true, ext, EventEmitter);
+	return ext;
+
+};
+
+
+var MainMenuButton = function(node) {
+	var
+		body = $(document.body),
+		win = $(window),
+			
+		container = $('.windows-container'),
+		mainMenuLogo = $('<div id="app-logo"></div>')
+					.appendTo(node),
+		mainMenuButton = $('<div id="main-menu-button"></div>')
+					.appendTo(node)
+					.on('click', mainMenuClick),
+		mainMenuDropDown = $('<div id="main-menu-dropdown">' + 
+								'<div class="main-menu-heading i18n" data-i18n="[html]menu.labels.addwindow">Add Window</div>' +
+								'<div id="main-menu-windows-list" class="main-menu-list"></div>' +
+								'<div class="main-menu-heading i18n" data-i18n="[html]menu.labels.options"></div>' +
+								'<div id="main-menu-features" class="main-menu-list"></div>' +								
+							'</div>')
+							.appendTo( body )
+							.hide();
+
+
+	function mainMenuClick(e) {
+		
+		if (mainMenuDropDown.is(':visible')) {			
+			hide();		
+		} else {			
+			show();
+		}
+	}
+	
+	function show() {
+		mainMenuButton.addClass('active');
+		mainMenuDropDown.show();
+		ext.onshow();		
+	}	
+	
+	function hide() {
+		mainMenuButton.removeClass('active');
+		mainMenuDropDown.hide();
+		ext.onhide();		
+	}
+	
+	mainMenuDropDown.on('click', '.main-menu-item', function() {
+		hide();
+	});
+	
+	
+	var ext = {};
+	ext = $.extend(true, ext, EventEmitter);
+	ext = $.extend(true, ext, ClickOff);
+	ext.clickoffid = 'version picker';
+	ext.on('offclick', function() {
+		hide();
+	});
+	ext.setClickTargets([mainMenuButton, mainMenuDropDown]);
+
+	return ext;	
+	
+}
+
+
+sofia.menuComponents.push('MainMenuButton');
+
+//var MenuBJC = function(node) {
+
+//        var menuBJC = $(
+//		'<nav class="nav-menu navbar" role="navigation">'+
+//		    '<div class="container">'+
+//		        '<div class="navbar-header">'+
+//		            '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">'+
+//		                '<span class="sr-only">Toggle navigation</span>'+
+//		                '<span class="icon-bar"></span>'+
+//		                '<span class="icon-bar"></span>'+
+//		                '<span class="icon-bar"></span>'+
+//		            '</button>'+
+//		        '</div>'+
+//		        '<div class="collapse navbar-collapse" id="navbar-collapse-1">'+
+//		            '<ul class="nav navbar-nav">'+
+//		                '<li><a id="bible-selected" href="lire.html" class="i18n" data-i18n="[html]menu.bjc.bible"></a></li>'+
+//		                '<li><a id="download-selected" href="telecharger.html" class="i18n" data-i18n="[html]menu.bjc.download"></a></li>'+
+//		        '</div>'+
+//		    '</div>'+
+//		'</nav>'
+//		).appendTo(node)
+//        return menuBJC;
+//};
+//sofia.menuComponents.push('MenuBJC');

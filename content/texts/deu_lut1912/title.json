@@ -1,0 +1,13 @@
+{
+"id":"GERL12",
+"type":"bible",
+"name":"Luther Bibel 1912",
+"nameEnglish":"German Luther Bible 1912",
+"abbr":"L1912",
+"dir":"ltr",
+"lang":"deu",
+"country":"Germany",
+"countries":["DE","AT","BE","CH","CZ","DK","HU","IT","KZ","LI","LU","NA","PL","PY","RO","SI","SK","UA"],
+"langNameEnglish":"German, Standard",
+"langName":"Deutsch"
+}

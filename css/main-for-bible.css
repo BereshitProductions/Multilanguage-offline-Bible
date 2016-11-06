@@ -1,0 +1,26 @@
+/*main specific option for the bible app*/
+
+@import url("main.css");
+
+/*make bible option button visible*/
+#main-add-button, #main-config-button, #main-fullscreen-button{
+	visibility: visible !important;
+}
+
+.container{
+	width: 100%;
+}
+
+@media only screen and (max-width:460px) {
+	#main-add-button{
+		visibility: hidden !important;
+	}
+}
+
+@media only screen and (max-width:460px) {
+	.container{
+		float: left;
+		width: 80%;
+	}
+}
+

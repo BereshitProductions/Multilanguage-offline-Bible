@@ -1,0 +1,114 @@
+{
+	"textIds": [
+		"comm_eng_tske",
+		"deu_lut1912",
+		"eng_kjv",
+		"fra_bjc",
+		"fra_lsg",
+		"fra_mrt",
+		"fra_ost",
+		"grc_tr",
+		"heb_wlc"
+	],
+	"textInfoData": [
+		{
+			"id": "comm_eng_tske",
+			"name": "Treasury of Scripture Knowledge (Enhanced)",
+			"nameEnglish": "",
+			"abbr": "TSKe",
+			"lang": "eng",
+			"langName": "English",
+			"langNameEnglish": "English",
+			"dir": "ltr",
+			"type": "commentary"
+		},
+		{
+			"id": "deu_lut1912",
+			"name": "Luther Bibel 1912",
+			"nameEnglish": "German Luther Bible 1912",
+			"abbr": "L1912",
+			"lang": "deu",
+			"langName": "Deutsch",
+			"langNameEnglish": "German, Standard",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
+			"id": "eng_kjv",
+			"name": "King James Version",
+			"nameEnglish": "",
+			"abbr": "KJV",
+			"lang": "eng",
+			"langName": "English",
+			"langNameEnglish": "English",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
+			"id": "fra_bjc",
+			"name": "Bible de Jésus-Christ",
+			"nameEnglish": "French",
+			"abbr": "BJC",
+			"lang": "fra",
+			"langName": "Français",
+			"langNameEnglish": "French",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
+			"id": "fra_lsg",
+			"name": "Louis Segond 1910",
+			"nameEnglish": "Bible Louis Segond 1910",
+			"abbr": "LSG",
+			"lang": "fra",
+			"langName": "Français",
+			"langNameEnglish": "French",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
+			"id": "fra_mrt",
+			"name": "Martin 1744",
+			"nameEnglish": "French",
+			"abbr": "MRT",
+			"lang": "fra",
+			"langName": "Français",
+			"langNameEnglish": "French",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
+			"id": "fra_ost",
+			"name": "Ostervald Rev. 1996",
+			"nameEnglish": "French",
+			"abbr": "OST",
+			"lang": "fra",
+			"langName": "Français",
+			"langNameEnglish": "French",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
+			"id": "grc_tr",
+			"name": "Textus Receptus Stephanus (1550)",
+			"nameEnglish": "",
+			"abbr": "GTR",
+			"lang": "grc",
+			"langName": "ελληνικά",
+			"langNameEnglish": "Greek",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
+			"id": "heb_wlc",
+			"name": "Westminster Leningrad Codex",
+			"nameEnglish": "Westminster Leningrad Codex",
+			"abbr": "WLC",
+			"lang": "heb",
+			"langName": "עִבְרִית",
+			"langNameEnglish": "Hebrew",
+			"dir": "rtl",
+			"type": "bible"
+		}
+	]
+}

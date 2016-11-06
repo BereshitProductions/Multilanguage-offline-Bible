@@ -1,0 +1,13 @@
+{
+"id":"FRELSG",
+"type":"bible",
+"name":"Louis Segond 1910",
+"nameEnglish":"French Louis Segond 1910 Bible",
+"abbr":"F10",
+"dir":"ltr",
+"lang":"fra",
+"country":"French",
+"countries":["FR","AD","BE","BF","BI","BJ","BL","CA","CD","CF","CG","CH","CI","CM","DJ","DZ","GA","GB","GF","GN","GP","GQ","HT","IN","IT","KH","KM","LB","LU","MC","MF","MG","ML","MQ","MR","MU","NC","NE","PF","PM","RE","RW","SC","SN","TD","TG","TN","US","VU","WF","YT"],
+"langNameEnglish":"French",
+"langName":"français"
+}
